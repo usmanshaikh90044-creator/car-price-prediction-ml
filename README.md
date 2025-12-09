@@ -105,7 +105,15 @@ This project is licensed under the **MIT License** — free to use, modify, and 
 **Usman Shaikh**  
 Machine Learning & Data Science Enthusiast  
 
----
+## 🚗 Car Price Prediction Web App
+
+This project uses a Random Forest model to predict used car prices.
+
+### How to Run Locally:
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+
 
 ✅ If you found this project useful, feel free to ⭐ star the repository!
 
