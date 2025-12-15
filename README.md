@@ -1,23 +1,25 @@
 # 🚗 Car Price Prediction Using Machine Learning  
 
-This project focuses on predicting the selling price of used cars using various machine learning models. It involves complete data preprocessing, feature engineering, model training, evaluation, and comparison to identify the best-performing algorithm. Among all the models tested, the **Random Forest Regressor achieved the highest accuracy with an R² score of 94%**.
+## 🌐 Live Demo
+🔗 **Streamlit App:** https://car-price-prediction-usman.streamlit.app
 
 ---
 
 ## 📌 Problem Statement  
-Estimating the correct selling price of a used car is a challenging task due to multiple influencing factors such as vehicle age, mileage, fuel type, engine specifications, transmission type, and ownership history. Traditional pricing methods are often inaccurate and subjective. This project aims to solve this problem using machine learning-based regression techniques.
+Estimating the correct selling price of a used car is challenging due to multiple influencing factors such as vehicle age, mileage, fuel type, engine specifications, transmission type, and ownership history. Traditional pricing methods are often subjective and inaccurate. This project aims to solve this problem using machine learning-based regression techniques.
 
 ---
 
 ## 🎯 Objective  
-- To build an accurate machine learning model to predict used car prices.  
-- To analyze the factors that influence car prices the most.  
-- To compare multiple regression and ensemble models and select the best-performing one.  
+- Build an accurate machine learning model to predict used car prices  
+- Analyze key factors influencing car prices  
+- Compare multiple regression models and select the best-performing one  
 
 ---
 
 ## 📊 Dataset Description  
-The dataset contains **8,128 records** with the following key features:
+The dataset contains **8,128 records** with the following features:
+
 - Car Name  
 - Year of Manufacture  
 - Selling Price (Target Variable)  
@@ -32,16 +34,16 @@ The dataset contains **8,128 records** with the following key features:
 - Torque  
 - Number of Seats  
 
-Several columns contained mixed data types (e.g., "250 cc", "19 kmpl") which were cleaned and converted into numerical format during preprocessing.
+Several columns contained mixed data types (e.g., `"250 cc"`, `"19 kmpl"`) which were cleaned and converted into numerical format during preprocessing.
 
 ---
 
 ## ⚙️ Data Preprocessing & Feature Engineering  
 - Handling missing values  
 - Removing units from numerical features (cc, kmpl, bhp, etc.)  
-- Converting categorical features using encoding techniques  
+- Encoding categorical features  
 - Outlier detection and treatment  
-- Multicollinearity detection using VIF  
+- Multicollinearity analysis using VIF  
 
 ---
 
@@ -57,26 +59,32 @@ Several columns contained mixed data types (e.g., "250 cc", "19 kmpl") which wer
 ## 🏆 Model Performance Summary  
 
 | Model | R² Score |
-|--------|----------|
+|------|----------|
 | Linear Regression | 66% |
 | Decision Tree | 91% |
 | Pruned Decision Tree | 90% |
 | KNN | 84% |
-| ✅ Random Forest | ✅ **94%** |
+| ✅ Random Forest | **94%** |
 
-✅ **Random Forest performed the best with the highest R² and adjusted R² score of 94%.**
+✅ **Random Forest achieved the best performance with an R² score of 94%.**
 
 ---
 
 ## ✅ Final Conclusion  
-Linear Regression performed the worst due to violation of regression assumptions such as multicollinearity and presence of outliers. Tree-based models performed significantly better, with Random Forest emerging as the most accurate and reliable model for predicting used car prices.
+Linear Regression performed poorly due to multicollinearity and outliers. Tree-based models performed significantly better, with **Random Forest emerging as the most accurate and robust model** for used car price prediction.
+
+---
+
+## 🚀 Deployment  
+The final model is deployed as a **public web application using Streamlit Cloud**, allowing users to input car details and instantly get a price prediction.
+
+🔗 **Live App:** https://car-price-prediction-usman.streamlit.app
 
 ---
 
 ## 🚀 Future Scope  
-- Deploy the model using Flask or Streamlit  
-- Integrate real-time car data  
-- Experiment with boosting algorithms such as XGBoost and Gradient Boosting  
+- Integrate real-time car listing data  
+- Experiment with boosting algorithms (XGBoost, Gradient Boosting)  
 - Improve feature engineering using domain expertise  
 
 ---
@@ -88,16 +96,12 @@ Linear Regression performed the worst due to violation of regression assumptions
 - Scikit-learn  
 - Matplotlib & Seaborn  
 - Statsmodels  
-- Jupyter Notebook  
-
----
-  
-
+- Streamlit  
 
 ---
 
 ## 📜 License  
-This project is licensed under the **MIT License** — free to use, modify, and distribute.
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -105,15 +109,4 @@ This project is licensed under the **MIT License** — free to use, modify, and 
 **Usman Shaikh**  
 Machine Learning & Data Science Enthusiast  
 
-## 🚗 Car Price Prediction Web App
-
-This project uses a Random Forest model to predict used car prices.
-
-### How to Run Locally:
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-
-
-✅ If you found this project useful, feel free to ⭐ star the repository!
-
+⭐ If you found this project useful, feel free to star the repository!
